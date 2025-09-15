@@ -17,21 +17,22 @@ def divide(a, b):
         return "Error! Division by zero."
 
 
-# main program
-print("Simple Calculator")
-print("Choose operation: +, -, *, /")
+# main program (only runs when executed directly, not when imported)
+if __name__ == "__main__":
+    print("Simple Calculator")
+    print("Choose operation: +, -, *, /")
 
-op = input("Enter operator: ")
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+    op = input("Enter operator: ")
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
 
-if op == '+':
-    print("Result:", add(num1, num2))
-elif op == '-':
-    print("Result:", subtract(num1, num2))
-elif op == '*':
-    print("Result:", multiply(num1, num2))
-elif op == '/':
-    print("Result:", divide(num1, num2))
-else:
-    print("Invalid operator!")
+    if op == '+':
+        print("Result:", add(num1, num2))
+    elif op == '-':
+        print("Result:", subtract(num1, num2))
+    elif op == '*':
+        print("Result:", multiply(num1, num2))
+    elif op == '/':
+        print("Result:", divide(num1, num2))
+    else:
+        print("Invalid operator!")
