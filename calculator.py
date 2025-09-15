@@ -16,6 +16,7 @@ def divide(a, b):
     else:
         return "Error! Division by zero."
 
+
 # main program
 print("Simple Calculator")
 print("Choose operation: +, -, *, /")
